@@ -16,9 +16,11 @@ namespace TennisSimplified
     // 3. If at least three points have been scored by each side
     //    and a player has two more points than his opponent,
     //    then this player is a winner 
-    // 4. After each point is scored result should be returned as string 
+    // 4. Methods FirstPlayerScored() and SecondPlayerScored() means that ball
+    //    was won by first or second player respectively
+    // 5. Result printed by GetResult() method should be string 
     //    in format " 0 - 0 ", "15 - 0 ", "30 - 40", "Adv    ", "    Adv"
-    //    " Deuce ", "Won    ", "    Won" (7 chars in total for all cases
+    //    " Deuce ", "Won    ", "    Won" (7 chars in total for all cases)
     public class Program
     {
         private static void Main(string[] args)
@@ -26,18 +28,25 @@ namespace TennisSimplified
 	        var tennisScoringSystem = new TennisScoringSystem();
 	        tennisScoringSystem.FirstPlayerScored(); 
 	        Console.WriteLine(tennisScoringSystem.GetResult()); // should print "15 - 0 "
+
 	        tennisScoringSystem.SecondPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "15 - 15"
+
             tennisScoringSystem.FirstPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "30 - 15"
+
             tennisScoringSystem.FirstPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "40 - 15"
+
             tennisScoringSystem.SecondPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "40 - 30"
+
             tennisScoringSystem.SecondPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print " Deuce "
+
             tennisScoringSystem.FirstPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "Adv    "
+
             tennisScoringSystem.FirstPlayerScored();
             Console.WriteLine(tennisScoringSystem.GetResult()); // should print "Won    "
         }

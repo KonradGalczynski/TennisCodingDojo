@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisSimplified", "TennisSimplified\TennisSimplified.csproj", "{EE3E64A7-C5B3-419F-8C62-0FE310350D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisSimplifiedSpecification", "TennisSimplifiedSpecification\TennisSimplifiedSpecification.csproj", "{E01915C2-1511-40DC-8028-BF124998B38E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisSimplifiedTests", "TennisSimplifiedSpecification\TennisSimplifiedTests.csproj", "{E01915C2-1511-40DC-8028-BF124998B38E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 
 namespace TennisSimplifiedSpecification
 {
-    public class TennisScoringSystem
+    public class TennisScoringSystemTests
     {
 	    [Fact]
 	    public void SampleTest()
