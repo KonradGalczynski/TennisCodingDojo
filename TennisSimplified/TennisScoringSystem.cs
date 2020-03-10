@@ -9,7 +9,7 @@ namespace TennisSimplified
 			throw new NotImplementedException();
 		}
 
-		public bool GetResult()
+		public string GetResult()
 		{
 			throw new NotImplementedException();
 		}
